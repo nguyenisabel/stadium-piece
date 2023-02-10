@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:ital,wght@0,400;0,700;1,400;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+body{
+    font-family: 'IBM Plex Sans', sans-serif;
+    background-color: #ede9cb;
+}
+nav{
+    background-color: #ede9cb;
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
+}
+h1{
+    color: black;
+    font-family: 'Arsenal', sans-serif;
+    text-align: center;
+    margin: auto;
+    padding-top: 15px;
+}
+img{
+    padding: 20px;
+    height: 100%;
+    width: 100%;
+    border-radius: 50% 50% 0% 0%;
+}
+p{
+    margin: auto;
+    padding: 5px 20px;
+    text-align: center;
+}
+p b{
+    font-weight: 500;
+}
+button.begin{
+    background-color: #645b95;
+    border: 5px solid #645b95;
+    border-radius: 50%;
+}
+button.begin a{
+    color: black;
+    font-family: 'Arsenal', sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+}
