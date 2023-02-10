@@ -23,6 +23,7 @@ img{
     border-radius: 50% 50% 0% 0%;
 }
 p{
+    color: black;
     margin: auto;
     padding: 5px 20px;
     text-align: center;
