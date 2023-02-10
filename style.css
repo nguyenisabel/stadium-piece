@@ -34,8 +34,89 @@ button.begin{
     background-color: #645b95;
     border: 5px solid #645b95;
     border-radius: 50%;
+    margin-bottom: 10px;
 }
 button.begin a{
+    color: black;
+    font-family: 'Arsenal', sans-serif;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+p.pink{
+    line-height: 200%;
+}
+p.pink mark{
+    background-color: #d1aea9;
+}
+.card {
+    margin: 10px 10px;
+}
+input[type='checkbox'] {
+    display: none;
+}
+.card-container {
+    border-style: none;
+    display: grid;
+    perspective: 700px;
+}
+.card-flip {
+    display: grid;
+    grid-template: 1fr / 1fr;
+    grid-template-areas: "frontAndBack";
+    transform-style: preserve-3d;
+    transition: all 0.7s ease;
+}
+.card-flip div {
+    backface-visibility: hidden;
+}
+.front {
+    grid-area: frontAndBack;
+    background: transparent;
+    border-style: none;
+    height: auto;
+    width: auto;
+}
+.front img{
+    border-radius: 50%;
+}
+.back {
+    border-style: none;
+    border-radius: 50%;
+    color: black;
+    background-color: #d1aea9;
+    padding: 20px;
+    font-family: 'Arsenal', sans-serif;
+    grid-area: frontAndBack;
+    transform: rotateY(-180deg);
+}
+.back b{
+    font-size: x-large;
+    font-weight: 600;
+}
+.back i{
+    font-size: smaller;
+}
+input[type='checkbox']:checked + .card-container .card-flip {
+    transform: rotateY(180deg);
+}
+
+img.decoration{
+    border-radius: 50%;
+}
+p.pink i.instruction{
+    font-size: small;
+    padding: none;
+    line-height: normal;
+}
+
+button.more{
+    margin-bottom: 10px;
+    background-color: #6d8caf;
+    border: 15px solid #6d8caf;
+    border-radius: 50%;
+}
+button.more a{
     color: black;
     font-family: 'Arsenal', sans-serif;
     text-decoration: none;
